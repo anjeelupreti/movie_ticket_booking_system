@@ -29,7 +29,7 @@ All actions are executed within a single file: `main.py`.
 
 ### 1. Clone the Repository
 
---git clone https://github.com/yourusername/movie-ticket-booking.git
+- git clone https://github.com/anjeelupreti/movie_ticket_booking_system.git
 - cd movie-ticket-booking
 - python main.py
 
@@ -71,15 +71,23 @@ This credential is stored in `data/users.json`, which is the only JSON file pres
 ---
 
 ## 🗃️ Project Structure
+### movie_ticket_booking_system
 
-movie_ticket_booking_system/
-├── data/
-│   ├── users.json # Admin + user login info (preloaded with admin)
-│   ├── movies.json # Created when admin adds movies
-│   ├── showtimes.json # Created when admin adds showtimes
-├── main.py # All logic and interaction live in one file
-├── README.md # You're reading it!
+#### data
+- **users.json**  
+  *Admin + user login info (preloaded with admin)*
 
+- **movies.json**  
+  *Created when admin adds movies*
+
+- **showtimes.json**  
+  *Created when admin adds showtimes*
+
+#### main.py  
+*All logic and interaction live in one file*
+
+#### README.md  
+*You're reading it!*
 
 > 🔸 `users.json` is the only file created beforehand  
 > 🔸 All other data files are auto-generated when needed
