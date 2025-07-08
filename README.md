@@ -29,11 +29,12 @@ All actions are executed within a single file: `main.py`.
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/yourusername/movie-ticket-booking.git
 cd movie-ticket-booking
 python main.py
 
+
+---
 
 ## 🔐 Default Admin Access
 
@@ -51,35 +52,34 @@ This credential is stored in `data/users.json`, which is the only JSON file pres
 
 ### 👤 User Role
 
-- ✅ Register a new account
-- ✅ Login to access user menu
-- ✅ View available movies
-- ✅ Check showtimes for each movie
-- ✅ Book seats for a selected showtime
-- ✅ Cancel a booking (booking-level only)
+- ✅ Register a new account  
+- ✅ Login to access user menu  
+- ✅ View available movies  
+- ✅ Check showtimes for each movie  
+- ✅ Book seats for a selected showtime  
+- ✅ Cancel a booking (booking-level only)  
 
 > ⚠ Note: Seat-wise cancellation is not yet available — full bookings must be canceled as a whole.
 
 ### 🛠 Admin Role
 
-- ✅ Login using default credentials
-- ✅ Add movies to the system
-- ✅ Remove movies from the list
-- ✅ Add showtimes for any movie
-- ✅ View list of all movies
+- ✅ Login using default credentials  
+- ✅ Add movies to the system  
+- ✅ Remove movies from the list  
+- ✅ Add showtimes for any movie  
+- ✅ View list of all movies  
 
 ---
 
 ## 🗃️ Project Structure
 
-movie-ticket-booking/
+movie_ticket_booking_system/
 ├── data/
-│ ├── users.json # Admin + user login info (preloaded with admin)
-│ ├── movies.json # Created when admin adds movies
-│ ├── showtimes.json # Created when admin adds showtimes
+│   ├── users.json # Admin + user login info (preloaded with admin)
+│   ├── movies.json # Created when admin adds movies
+│   ├── showtimes.json # Created when admin adds showtimes
 ├── main.py # All logic and interaction live in one file
 ├── README.md # You're reading it!
-
 
 
 > 🔸 `users.json` is the only file created beforehand  
@@ -89,58 +89,58 @@ movie-ticket-booking/
 
 ## 🖥️ Requirements
 
-- Python **3.7+**
-- No external libraries required
-
-```bash
-python --version
+- Python **3.7+**  
+- No external libraries required  
 
 
-All features are implemented using:
+---
 
-json — for persistent data
-os — for cross-platform terminal clearing
-getpass — to securely input passwords
-time — for short interactive delays
-sys — to exit and detect environment
+## 📚 Used Python Standard Libraries
 
+- `json` — for persistent data  
+- `os` — for cross-platform terminal clearing  
+- `getpass` — to securely input passwords  
+- `time` — for short interactive delays  
+- `sys` — to exit and detect environment  
 
+---
 
-🧠 System Design Decisions
-Single File Structure
+## 🧠 System Design Decisions
 
-All code is written in main.py for simplicity.
+### Single File Structure
 
-JSON for Persistence
+All code is written in `main.py` for simplicity.
 
-users.json stores user/admin data and bookings.
+### JSON for Persistence
 
-movies.json stores movie entries.
+- `users.json` stores user/admin data and bookings.  
+- `movies.json` stores movie entries.  
+- `showtimes.json` stores showtimes and seat maps.  
 
-showtimes.json stores showtimes and seat maps.
+Files (except `users.json`) are created dynamically.
 
-Files (except users.json) are created dynamically.
-
-Minimalist CLI UX
+### Minimalist CLI UX
 
 Simple menus and clear prompts ensure usability without needing GUI.
 
-No Third-Party Libraries
+### No Third-Party Libraries
 
 100% pure Python. Easy to run anywhere without installation overhead.
 
+---
 
+## 🤖 Use of AI Tools & Attribution
 
-🤖 Use of AI Tools & Attribution
 AI assistance (ChatGPT) was used:
 
-For refactoring, naming, and designing menus.
-
-To improve validations, UX flow, and error handling.
+- For refactoring, naming, and designing menus.  
+- To improve validations, UX flow, and error handling.  
 
 But all logic, testing, structural decisions, and incremental improvements were made manually — as part of a user-centered iterative design mindset.
 
+---
 
+## 📝 Author Notes
 
-📝 Author Notes
 This system was designed with real-world user experience in mind. From input validation to responsive prompts, every part was imagined as if a user was navigating it live. Admin workflows are streamlined for quick movie/showtime updates, while user flows simulate actual ticket systems — all within a terminal interface.
+
