@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "movie_id": 1,
+        "datetime": "2025-07-10 00:00",
+        "number_of_seats": 10,
+        "seats": {
+            "A1": "user1",
+            "A2": "user1",
+            "A3": "user1",
+            "A4": "user1",
+            "A5": "available",
+            "A6": "available",
+            "A7": "available",
+            "A8": "available",
+            "A9": "available",
+            "A10": "available"
+        }
+    }
+]
