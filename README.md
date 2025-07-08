@@ -29,9 +29,9 @@ All actions are executed within a single file: `main.py`.
 
 ### 1. Clone the Repository
 
-git clone https://github.com/yourusername/movie-ticket-booking.git
-cd movie-ticket-booking
-python main.py
+--git clone https://github.com/yourusername/movie-ticket-booking.git
+- cd movie-ticket-booking
+- python main.py
 
 
 ---
@@ -40,8 +40,8 @@ python main.py
 
 The system comes with a pre-registered admin:
 
-Username: admin
-Password: admin
+- Username: admin
+- Password: admin
 
 
 This credential is stored in `data/users.json`, which is the only JSON file present initially. All other files (`movies.json`, `showtimes.json`) are created when new data is added by the admin or users.
@@ -57,9 +57,8 @@ This credential is stored in `data/users.json`, which is the only JSON file pres
 - ✅ View available movies  
 - ✅ Check showtimes for each movie  
 - ✅ Book seats for a selected showtime  
-- ✅ Cancel a booking (booking-level only)  
+- ✅ Cancel a booking 
 
-> ⚠ Note: Seat-wise cancellation is not yet available — full bookings must be canceled as a whole.
 
 ### 🛠 Admin Role
 
